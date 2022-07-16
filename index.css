@@ -1,0 +1,356 @@
+body{
+    background-color: #403d39;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif
+}
+header{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: black;
+    align-items: center;
+    box-sizing: border-box;
+    border-top: 3px solid #eb5e28;
+    border-bottom: 3px solid #eb5e28;
+}
+.logo{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+}
+.navbar{
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    width: 100%;
+    gap: 80px;
+    align-items: center;
+    padding: 0;
+    justify-content: space-around; 
+}
+.menu li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}  
+.menu a{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+    background-color: white;
+    width: 80px;
+    border-radius: 7px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid #eb5e28;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    font-size: 3rem;
+    text-shadow: 1px 5px 3px rgba(246,239,239,0.27);
+}
+
+.pesca1{
+    display: none;
+    width: 60%;
+    height: 600px;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: auto;
+    border: 3px solid #ccc5b9;
+    
+}
+.tracker{
+    display: flex;
+    width: 90%;
+    height: 50%;
+    box-sizing: border-box;
+    background-color: #ccc5b9;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    margin-top: 10px;
+   
+   
+}
+.motor {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    background-image: url(motor.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    border-right: #403d39 5px solid;
+}
+.frente {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    background-image: url(tracker.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-left: #403d39 5px solid;
+    
+
+}
+.amanecer {
+    width: 90%;
+    height: 50%;
+    box-sizing: border-box;
+    background-image: url(amanecer.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    background-color: #ccc5b9;
+    margin-bottom: 10px;
+    
+}
+.cards1{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 70px;
+    box-sizing: border-box;
+}
+.card-price-small {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    background-color: black;
+    border: 2px solid #eb5e28;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px 0px 19px 0px rgba(247,238,238,0.55);
+    -webkit-box-shadow: 0px 0px 19px 0px rgba(247,238,238,0.55);
+    -moz-box-shadow: 0px 0px 19px 0px rgba(247,238,238,0.55);
+}
+.card-price{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+    justify-content: space-around;
+    height: 300px;
+    background-color: black;
+    border: 2px solid #eb5e28;
+    border-radius: 10px;
+    color: white;
+}
+.card-price-small h3{
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+.card-price h3{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.cards1 i{
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+}
+.embarcacion{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ccc5b9;
+    justify-content: space-around;
+    align-items: center;
+}
+.embarcacion-p {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.icon-boat{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: space-around;
+}
+.icon-boat i{
+    font-size: 3rem;
+}
+.icon-boat a{
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+.icon-boat a:hover{
+    background-color: black;
+    color: #eb5e28;
+}
+.pesca {  
+    display: grid;
+    width: 60%;
+    height: 700px;
+    margin: auto;
+    grid-template-columns: 0.7fr 1.3fr 1.3fr 0.7fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 4px 4px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "div5 div2 div3 div6"
+      "div5 div2 div3 div6"
+      "div5 div1 div1 div6"
+      "div5 div1 div1 div6";
+    border-top: 3px solid #ccc5b9;
+    border-bottom: 3px solid #ccc5b9;
+  }
+  
+  .div1 { 
+    grid-area: div1;
+    background-image: url(amanecer.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+
+  
+  .div2 { 
+    grid-area: div2; 
+    background-image: url(motor.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 8px;
+}
+  
+  .div3 { 
+    grid-area: div3;
+    background-image: url(tracker.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 8px;
+ }
+  
+  .div5 { 
+    grid-area: div5; 
+    background-color: #ccc5b9;
+}
+  
+  .div6 { 
+    grid-area: div6; 
+    background-color: #ccc5b9;
+}
+  
+@media (max-width:1069px){
+    .pesca{
+        width: 80%;
+    }
+    .card-price{
+        width: 25%;
+    }
+    .card-price-small{
+        width: 28%;
+    }
+}
+@media (max-width:768px){
+    .menu{
+        gap: 40px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .pesca{
+        width: 90%;
+    
+    }
+    .card-price-small{
+        width: 25%;
+        font-size: 1.3rem;
+    }
+    .card-price-small h3{
+        font-size: 1.2rem;
+    }
+    .embarcacion{
+        flex-direction: column;
+    }
+    .embarcacion-p{
+        width: 90%;
+    }
+    .embarcacion-p{
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    .icon-boat{
+        width: 60%;
+    }
+    .icon-boat a{
+        padding: 7px;
+        font-size: 0.8rem;
+    }
+}
+@media (max-width:680px){
+    .pesca{
+        height: 400px;
+    }
+    .card-price-small{
+        height: 150px;
+    }
+    .card-price{
+        font-size: 0.8rem;
+        padding: 10px;
+        height: 200px;
+    }
+    .cards1 i{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width:500px){
+    .cards1 h3{
+        font-size: 0.8rem;
+    }
+    .embarcacion-p{
+        font-size: 1.1rem;
+    }
+
+}
+@media (max-width:425px){
+    .menu{
+        gap: 25px;
+    }
+    .menu a{
+        font-size: 0.8rem;
+    }
+    .cards1 h3{
+        font-size: 0.7rem;
+    }
+    .cards1 i{
+        font-size: 0.9rem;
+    }
+    .card-price-small{
+        height: 120px;
+    }
+    .card-price{
+        height: 150px;
+    }
+}
