@@ -8,6 +8,25 @@ h1{
     color:white;
     text-align: center;
 }
+.button-flotante {
+  font-size: 1rem;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  width: 100px;
+  border-radius: 5px;
+  letter-spacing: 1.5px;
+  background-color: #eb5f289c;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 99;
+}
+
+.button-flotante:hover {
+  background-color: #dd9b6d;
+}
 .pescadores{
     display: flex;
     flex-wrap: wrap;
@@ -83,5 +102,9 @@ h1{
   @media (max-width:768px){
     .container{
       width:80%;
+    }
+    .button-flotante{
+      width: 70px;
+      font-size: 0.7rem;
     }
   }

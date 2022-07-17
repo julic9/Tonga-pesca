@@ -1,0 +1,95 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.button-flotante {
+    font-size: 1rem;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+    border-radius: 5px;
+    letter-spacing: 1.5px;
+    background-color: #eb5f289c;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 99;
+  }
+  
+  .button-flotante:hover {
+    background-color: #dd9b6d;
+  }
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.trac2{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+.trac2 img{
+   width: 100%;
+   border: 3px solid #eb5e28;
+}
+.descript{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+.motor{
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+.motor img{
+    width: 100%;
+    border: 3px solid #eb5e28;
+}
+.trac{
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+.trac img{
+    width: 100%;
+    border: 3px solid #eb5e28;
+}
+@media (max-width:768px){
+    .button-flotante{
+        width: 60px;
+        font-size: 0.7rem;
+    }
+    .descript{
+        width: 80%;
+        font-size: 1.5rem;
+    }
+    .trac2{
+        width: 90%;
+    }
+    .motor{
+        width: 60%;
+    }
+    .trac{
+        width: 80%;
+    }
+}
