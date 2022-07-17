@@ -2,7 +2,7 @@ body{
     background-color: #403d39;
     padding: 0;
     margin: 0;
-    font-family: 'Montserrat', sans-serif
+    font-family: 'Montserrat', sans-serif;
 }
 header{
     display: flex;
@@ -59,7 +59,65 @@ h1{
     font-size: 3rem;
     text-shadow: 1px 5px 3px rgba(246,239,239,0.27);
 }
+.pesca {  
+    display: grid;
+    width: 60%;
+    height: 700px;
+    margin: auto;
+    grid-template-columns: 0.7fr 1.3fr 1.3fr 0.7fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 4px 4px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "div5 div2 div3 div6"
+      "div5 div2 div3 div6"
+      "div5 div1 div1 div6"
+      "div5 div1 div1 div6";
+    border-top: 3px solid #ccc5b9;
+    border-bottom: 3px solid #ccc5b9;
+  }
+  
+  .div1 { 
+    grid-area: div1;
+    background-image: url(amanecer.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
 
+  
+  .div2 { 
+    grid-area: div2; 
+    background-image: url(motor.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 8px;
+}
+  
+  .div3 { 
+    grid-area: div3;
+    background-image: url(tracker.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 8px;
+ }
+  
+  .div5 { 
+    grid-area: div5; 
+    background-color: #ccc5b9;
+}
+  
+  .div6 { 
+    grid-area: div6; 
+    background-color: #ccc5b9;
+}
+.titulo h2{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
 .pesca1{
     display: none;
     width: 60%;
@@ -207,61 +265,90 @@ h1{
     background-color: black;
     color: #eb5e28;
 }
-.pesca {  
-    display: grid;
-    width: 60%;
-    height: 700px;
+.galery{
+    display: flex;
+    height: 200px;
+    width: 70%;
+    margin-top: 40px;
+    justify-content: space-around;
     margin: auto;
-    grid-template-columns: 0.7fr 1.3fr 1.3fr 0.7fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 4px 4px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "div5 div2 div3 div6"
-      "div5 div2 div3 div6"
-      "div5 div1 div1 div6"
-      "div5 div1 div1 div6";
-    border-top: 3px solid #ccc5b9;
-    border-bottom: 3px solid #ccc5b9;
-  }
-  
-  .div1 { 
-    grid-area: div1;
-    background-image: url(amanecer.jpeg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
- }
+    align-items: center;
+    font-size: 1.8rem;
+    color: white;
+}
+.captura{
+    width: 220px;
+    height: 110px;
+    border-bottom: 4px solid black;
+}
+.captura:hover{
+    box-shadow: 0px 0px 16px 8px rgba(250,235,235,0.75);
+    -webkit-box-shadow: 0px 0px 16px 8px rgba(250,235,235,0.75);
+    -moz-box-shadow: 0px 0px 16px 8px rgba(250,235,235,0.75);
+}
+.contacto{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: black;
+    align-items: center;
+    box-sizing: border-box;
+    border-top: 3px solid #eb5e28;
+    border-bottom: 3px solid #eb5e28;
+    color: white;
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
 
-  
-  .div2 { 
-    grid-area: div2; 
-    background-image: url(motor.jpeg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 8px;
+.redes{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    flex-wrap: wrap
 }
-  
-  .div3 { 
-    grid-area: div3;
-    background-image: url(tracker.jpeg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 8px;
- }
-  
-  .div5 { 
-    grid-area: div5; 
-    background-color: #ccc5b9;
+.redes i{
+    font-size: 1.5rem;
 }
-  
-  .div6 { 
-    grid-area: div6; 
-    background-color: #ccc5b9;
+.wp{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 15px;
 }
-  
+
+
+.wp a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    background-color: blue;
+    width: 60px;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+.ubi{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin-right: 0;
+}
+.ubi a {
+    color: white;
+    
+}
+.ubi p{
+    font-size: 1.5rem;
+}
+
 @media (max-width:1069px){
     .pesca{
         width: 80%;
@@ -271,6 +358,10 @@ h1{
     }
     .card-price-small{
         width: 28%;
+    }
+    .galery{
+        flex-direction: column;
+        margin-bottom: 20px;
     }
 }
 @media (max-width:768px){
@@ -324,6 +415,23 @@ h1{
     .cards1 i{
         font-size: 1.2rem;
     }
+    .galery{
+        width: 100%;
+    }
+    .galery p{
+        font-size: 1.3rem;
+    }
+    .wp{
+        width: 40%;
+        margin-bottom: 20px;
+    }
+    .ubi{
+        width: 100%;
+        margin-top: 15px;
+    }
+    .redes i{
+        font-size: 1.3rem;
+    }
 }
 @media (max-width:500px){
     .cards1 h3{
@@ -336,7 +444,7 @@ h1{
 }
 @media (max-width:425px){
     .menu{
-        gap: 25px;
+        gap: 15px;
     }
     .menu a{
         font-size: 0.8rem;
@@ -353,4 +461,13 @@ h1{
     .card-price{
         height: 150px;
     }
+    .wp{
+        width: 45%;
+    }
 }
+@media (max-width:367px){
+    .menu{
+        gap: 5px;
+    }
+}
+
