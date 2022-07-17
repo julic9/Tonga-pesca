@@ -104,7 +104,8 @@ h1{
       width:80%;
     }
     .button-flotante{
-      width: 70px;
-      font-size: 0.7rem;
+      width: 90px;
+      font-size: 0.8rem;
+      padding: 5px;
     }
   }

@@ -76,20 +76,21 @@ body{
 }
 @media (max-width:768px){
     .button-flotante{
-        width: 60px;
-        font-size: 0.7rem;
+        width: 90px;
+        font-size: 0.8rem;
+        padding: 5px;
     }
     .descript{
         width: 80%;
         font-size: 1.5rem;
     }
     .trac2{
-        width: 90%;
+        width: 100%;
     }
     .motor{
-        width: 60%;
+        width: 80%;
     }
     .trac{
-        width: 80%;
+        width: 100%;
     }
 }
