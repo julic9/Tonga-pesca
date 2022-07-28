@@ -17,9 +17,9 @@ h1{
   width: 100px;
   border-radius: 5px;
   letter-spacing: 1.5px;
-  background-color: #eb5f289c;
+  background-color: #eb5f28c5;
   position: fixed;
-  bottom: 40px;
+  bottom: 15px;
   right: 15px;
   z-index: 99;
 }
