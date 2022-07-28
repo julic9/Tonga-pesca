@@ -286,6 +286,83 @@ h1{
     -webkit-box-shadow: 0px 0px 16px 8px rgba(250,235,235,0.75);
     -moz-box-shadow: 0px 0px 16px 8px rgba(250,235,235,0.75);
 }
+.container{
+    margin: auto;
+    background-color:#ccc5b9;
+    width: 40%;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .container ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  ul.slider{
+    position: relative;
+    width: 100%;
+    height: 500px;
+  }
+  
+  ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:#ccc5b9;
+  }
+  
+  ul.slider li img{
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+  }
+  
+  ul.slider li:first-child {
+      opacity: 1; 
+  }
+  
+  ul.slider li:target {
+      opacity: 1; 
+  }
+  
+  .galeria{
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .galeria li{
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .galeria li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+    margin-top: 20px;
+  }
+  .novedades{
+    width: 100%;
+    padding: 2px;
+    background-color: #eb5e28;
+  }
+  .novedades h2{
+    text-align: center;
+    color: white;
+  }
 .contacto{
     display: flex;
     width: 100%;
@@ -398,6 +475,9 @@ h1{
     .icon-boat a{
         padding: 7px;
         font-size: 0.8rem;
+    }
+    .container{
+        width: 80%;
     }
 }
 @media (max-width:680px){
