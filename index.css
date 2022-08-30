@@ -431,6 +431,12 @@ h1{
     margin-right: 10px;
     font-size: 1.2rem;
 }
+.vid {
+    display: flex;
+    margin: auto;
+    padding: 20px;
+    justify-content: center;
+}
 @media (max-width:1069px){
     .pesca{
         width: 80%;
