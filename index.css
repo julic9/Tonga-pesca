@@ -435,7 +435,10 @@ h1{
     display: flex;
     margin: auto;
     padding: 20px;
-    justify-content: center;
+    justify-content: space-around;
+}
+video {
+    border: 2px solid white;
 }
 @media (max-width:1069px){
     .pesca{
@@ -450,6 +453,9 @@ h1{
     .galery{
         flex-direction: column;
         margin-bottom: 20px;
+    }
+    .vid {
+        flex-direction: column;
     }
 }
 @media (max-width:768px){
