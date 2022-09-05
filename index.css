@@ -433,6 +433,7 @@ h1{
 }
 .vid {
     display: flex;
+    width: 40%;
     margin: auto;
     padding: 20px;
     justify-content: space-around;
@@ -456,6 +457,7 @@ video {
     }
     .vid {
         flex-direction: column;
+        width: 60%;
     }
 }
 @media (max-width:768px){
